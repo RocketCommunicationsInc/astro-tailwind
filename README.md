@@ -15,6 +15,6 @@ For now, reference [tailwind.config.js](./tailwind.config.js) for a list of avai
 
 ## Demo
 
-[Tailwind Play](https://play.tailwindcss.com/PYbrB6mxPK)
+[Tailwind Play](https://play.tailwindcss.com/SqWFByUQcF)
 You can get started immediately using this Tailwind Play configuration.
 
