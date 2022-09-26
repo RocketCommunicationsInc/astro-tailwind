@@ -1,286 +1,270 @@
 module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      textColor: {
-        primary: "#ffffff",
-        secondary: "#d4d8dd",
-        placeholder: "#a4abb6",
-        inverse: "#080c11",
-        error: "#ff3838",
-        white: "#ffffff",
-        black: "#000000",
-      },
-      backgroundColor: {
-        base: {
-          default: "#101923",
-          header: "#172635",
-          hover: "#142435",
-          selected: "#1c3f5e",
-        },
-        surface: {
-          default: "#1b2d3e",
-          header: "#172635",
-          hover: "#1c3851",
-          selected: "#1c3f5e",
-        },
-      },
-    },
-    colors: {
-      banner: {
-        classification: {
-          background: {
-            topsecretsci: "#fce83a",
-            topsecret: "#ff8c00",
-            secret: "#c8102e",
-            confidential: "#0033a0",
-            cui: "#502b85",
-            unclassified: "#007a33",
+      extend: {
+          textColor: {
+              primary: "var(--color-text-primary)",
+              secondary: "var(--color-text-secondary)",
+              placeholder: "var(--color-text-placeholder)",
+              inverse: "var(--color-text-inverse)",
+              error: "var(--color-text-error)",
+              white: "var(--color-text-white)",
+              black: "var(--color-text-black)",
+              interactive: {
+                "default": "var(--color-text-interactive-default)",
+                "hover": "var(--color-text-interactive-hover)"
+              }
           },
-        },
-        status: {
-          background: {
-            critical: "#ff5f60",
-            serious: "#ffcc57",
-            caution: "#fded61",
-            normal: "#99f666",
-            standby: "#5ce2ff",
-            off: "#bbc1c9",
+          backgroundColor: {
+              base: {
+                  default: "var(--color-background-base-default)",
+                  header: "var(--color-background-base-header)",
+                  hover: "var(--color-background-base-hover)",
+                  selected: "var(--color-background-base-selected)"
+              },
+              surface: {
+                  default: "var(--color-background-surface-default)",
+                  header: "var(--color-background-surface-header)",
+                  hover: "var(--color-background-surface-hover)",
+                  selected: "var(--color-background-background-selected)"
+              },
+              interactive: {
+                "default": "var(--color-background-interactive-default)",
+                "hover": "var(--color-background-interactive-hover)"
+              }
           },
-          icon: {
-            fill: {
-              critical: "#8b1703",
-              serious: "#975f0e",
-              caution: "#917d01",
-              normal: "#007a33",
-              standby: "#35798e",
-              off: "#51555b",
-            },
+          borderColor: {
+            interactive: {
+              default: "var(--color-border-interactive-default)",
+              hover: "var(--color-border-interactive-hover)",
+              muted: "var(--color-border-interactive-muted)"
+            }
+          }
+      },
+      colors: {
+          classification: {
+              topsecretsci: "var(--color-classification-topsecretsci)",
+              topsecret: "var(--color-classification-topsecret)",
+              secret: "var(--color-classification-secret)",
+              confidential: "var(--color-classification-confidential)",
+              cui: "var(--color-classification-cui)",
+              unclassified: "var(--color-classification-unclassified)"
           },
-        },
-      },
-      icon: {
-        status: {
-          fill: {
-            critical: "#ff3838",
-            serious: "#ffb302",
-            caution: "#fce83a",
-            normal: "#56f000",
-            standby: "#2dccff",
-            off: "#a4abb6",
+          status: {
+              critical: "var(--color-status-critical)",
+              serious: "var(--color-status-serious)",
+              caution: "var(--color-status-caution)",
+              normal: "var(--color-status-normal)",
+              standby: "var(--color-status-standby)",
+              off: "var(--color-status-off)"
           },
-          border: {
-            critical: "rgba(255, 56, 56, 0)",
-            serious: "rgba(255, 179, 2, 0)",
-            caution: "rgba(252, 232, 58, 0)",
-            normal: "rgba(86, 240, 0, 0)",
-            standby: "rgba(45, 204, 255, 0)",
-            off: "rgba(164, 171, 182, 0)",
+          neutral: {
+              1000: "var(--color-palette-neutral-1000)",
+              "000": "var(--color-palette-neutral-000)"
           },
-        },
+          darkblue: {
+              100: "var(--color-palette-darkblue-100)",
+              200: "var(--color-palette-darkblue-200)",
+              300: "var(--color-palette-darkblue-300)",
+              400: "var(--color-palette-darkblue-400)",
+              500: "var(--color-palette-darkblue-500)",
+              600: "var(--color-palette-darkblue-600)",
+              700: "var(--color-palette-darkblue-700)",
+              800: "var(--color-palette-darkblue-800)",
+              900: "var(--color-palette-darkblue-900)",
+              950: "var(--color-palette-darkblue-950)"
+          },
+          brightblue: {
+              100: "var(--color-palette-brightblue-100)",
+              200: "var(--color-palette-brightblue-200)",
+              300: "var(--color-palette-brightblue-300)",
+              400: "var(--color-palette-brightblue-400)",
+              500: "var(--color-palette-brightblue-500)",
+              600: "var(--color-palette-brightblue-600)",
+              700: "var(--color-palette-brightblue-700)",
+              800: "var(--color-palette-brightblue-800)",
+              850: "var(--color-palette-brightblue-850)",
+              900: "var(--color-palette-brightblue-900)"
+          },
+          grey: {
+              100: "var(--color-palette-grey-100)",
+              200: "var(--color-palette-grey-200)",
+              250: "var(--color-palette-grey-250)",
+              300: "var(--color-palette-grey-300)",
+              400: "var(--color-palette-grey-400)",
+              500: "var(--color-palette-grey-500)",
+              600: "var(--color-palette-grey-600)",
+              700: "var(--color-palette-grey-700)",
+              800: "var(--color-palette-grey-800)",
+              900: "var(--color-palette-grey-900)"
+          },
+          red: {
+              400: "var(--color-palette-red-400)",
+              500: "var(--color-palette-red-500)",
+              600: "var(--color-palette-red-600)",
+              700: "var(--color-palette-red-700)",
+              800: "var(--color-palette-red-800)",
+              900: "var(--color-palette-red-900)"
+          },
+          orange: {
+              400: "var(--color-palette-orange-400)",
+              500: "var(--color-palette-orange-500)",
+              600: "var(--color-palette-orange-600)",
+              700: "var(--color-palette-orange-700)",
+              800: "var(--color-palette-orange-800)",
+              900: "var(--color-palette-orange-900)"
+          },
+          yellow: {
+              400: "var(--color-palette-yellow-400)",
+              500: "var(--color-palette-yellow-500)",
+              600: "var(--color-palette-yellow-600)",
+              700: "var(--color-palette-yellow-700)",
+              800: "var(--color-palette-yellow-800)",
+              900: "var(--color-palette-yellow-900)"
+          },
+          green: {
+              400: "var(--color-palette-green-400)",
+              500: "var(--color-palette-green-500)",
+              600: "var(--color-palette-green-600)",
+              700: "var(--color-palette-green-700)",
+              800: "var(--color-palette-green-800)",
+              900: "var(--color-palette-green-900)"
+          },
+          cyan: {
+              400: "var(--color-palette-cyan-400)",
+              500: "var(--color-palette-cyan-500)",
+              600: "var(--color-palette-cyan-600)",
+              700: "var(--color-palette-cyan-700)",
+              800: "var(--color-palette-cyan-800)",
+              900: "var(--color-palette-cyan-900)"
+          },
+          violet: {
+              800: "var(--color-palette-violet-800)"
+          },
+          blue: {
+              800: "var(--color-palette-blue-800)"
+          },
+          teal: {
+              100: "var(--color-palette-teal-100)",
+              200: "var(--color-palette-teal-200)",
+              300: "var(--color-palette-teal-300)",
+              400: "var(--color-palette-teal-400)",
+              500: "var(--color-palette-teal-500)",
+              600: "var(--color-palette-teal-600)",
+              700: "var(--color-palette-teal-700)",
+              800: "var(--color-palette-teal-800)",
+              900: "var(--color-palette-teal-900)"
+          },
+          purple: {
+              100: "var(--color-palette-purple-100)",
+              200: "var(--color-palette-purple-200)",
+              300: "var(--color-palette-purple-300)",
+              400: "var(--color-palette-purple-400)",
+              500: "var(--color-palette-purple-500)",
+              600: "var(--color-palette-purple-600)",
+              700: "var(--color-palette-purple-700)",
+              800: "var(--color-palette-purple-800)",
+              900: "var(--color-palette-purple-900)"
+          },
+          pink: {
+              100: "var(--color-palette-pink-100)",
+              200: "var(--color-palette-pink-200)",
+              300: "var(--color-palette-pink-300)",
+              400: "var(--color-palette-pink-400)",
+              500: "var(--color-palette-pink-500)",
+              600: "var(--color-palette-pink-600)",
+              700: "var(--color-palette-pink-700)",
+              800: "var(--color-palette-pink-800)",
+              900: "var(--color-palette-pink-900)"
+          },
+          hotorange: {
+              100: "var(--color-palette-hotorange-100)",
+              200: "var(--color-palette-hotorange-200)",
+              300: "var(--color-palette-hotorange-300)",
+              400: "var(--color-palette-hotorange-400)",
+              500: "var(--color-palette-hotorange-500)",
+              600: "var(--color-palette-hotorange-600)",
+              700: "var(--color-palette-hotorange-700)",
+              800: "var(--color-palette-hotorange-800)",
+              900: "var(--color-palette-hotorange-900)"
+          }
       },
-      gsb: {
-        background: {
-          default: "#172635",
-        },
-        text: {
-          primary: "#ffffff",
-          secondary: "#d4d8dd",
-        },
-        interactive: {
-          default: "#4dacff",
-          hover: "#92cbff",
-          muted: "#2b659b",
-        },
+      borderRadius: {
+          base: "var(--radius-base)",
+          circle: "var(--radius-circle)"
       },
-      interactive: {
-        default: "#4dacff",
-        hover: "#92cbff",
-        muted: "#2b659b",
+      fontFamily: {
+          sans: ["var(--font-family-sans)"]
       },
-      neutral: {
-        1000: "#000000",
-        "000": "#ffffff",
+      fontSize: {
+          xs: ["var(--font-size-xs)", { lineHeight: "var(--font-size-xs)" }],
+          sm: [
+              "var(--font-size-sm)",
+              { lineHeight: "var(--line-height-sm)" }
+          ],
+          base: [
+              "var(--font-size-base)",
+              { lineHeight: "var(--line-height-base)" }
+          ],
+          lg: [
+              "var(--font-size-lg)",
+              { lineHeight: "var(--line-height-lg)" }
+          ],
+          xl: [
+              "var(--font-size-xl)",
+              { lineHeight: "var(--line-height-xl)" }
+          ],
+          "2xl": [
+              "var(--font-size-2xl)",
+              { lineHeight: "var(--line-height-lg)" }
+          ],
+          "3xl": [
+              "var(--font-size-3xl)",
+              { lineHeight: "var(--line-height-xl)" }
+          ],
+          "4xl": [
+              "var(--font-size-4xl)",
+              { lineHeight: "var(--line-height-2xl)" }
+          ],
+          "5xl": [
+              "var(--font-size-5xl)",
+              { lineHeight: "var(--line-height-xs)" }
+          ],
+          "6xl": [
+              "var(--font-size-6xl)",
+              { lineHeight: "var(--line-height-xs)" }
+          ]
       },
-      darkblue: {
-        100: "#cbdee9",
-        200: "#98bdd3",
-        300: "#649cbd",
-        400: "#2f7aa7",
-        500: "#005a8f",
-        600: "#004872",
-        700: "#1c3f5e",
-        800: "#1b2d3e",
-        900: "#172635",
-        950: "#080c11",
+      opacity: {
+          0: "0",
+          25: "var(--opacity-25)",
+          35: "var(--opacity-35)",
+          40: "var(--opacity-40)",
+          45: "var(--opacity-45)",
+          50: "var(--opacity-50)",
+          100: "1",
+          disabled: "var(--opacity-disabled)"
       },
-      brightblue: {
-        100: "#daeeff",
-        200: "#cee9fc",
-        300: "#b7dcff",
-        400: "#92cbff",
-        500: "#4dacff",
-        600: "#3a87cf",
-        700: "#2b659b",
-        800: "#1c3851",
-        850: "#142435",
-        900: "#101923",
-      },
-      grey: {
-        100: "#f5f6f9",
-        200: "#eaeef4",
-        250: "#e0e5eb",
-        300: "#d4d8dd",
-        400: "#bbc1c9",
-        500: "#a4abb6",
-        600: "#7b8089",
-        700: "#51555b",
-        800: "#3c3e42",
-        900: "#292a2d",
-      },
-      red: {
-        400: "#ff5f60",
-        500: "#ff3838",
-        600: "#ff2a04",
-        700: "#c8102e",
-        800: "#8b1703",
-        900: "#661102",
-      },
-      orange: {
-        400: "#ffcc57",
-        500: "#ffb302",
-        600: "#ffaf3d",
-        700: "#ff8c00",
-        800: "#975f0e",
-        900: "#664618",
-      },
-      yellow: {
-        400: "#fded61",
-        500: "#fce83a",
-        600: "#fad800",
-        700: "#c7ab00",
-        800: "#917d01",
-        900: "#645600",
-      },
-      green: {
-        400: "#99f666",
-        500: "#56f000",
-        600: "#00e200",
-        700: "#00ad23",
-        800: "#007a33",
-        900: "#005a00",
-      },
-      cyan: {
-        400: "#5ce2ff",
-        500: "#64d9ff",
-        600: "#2dccff",
-        700: "#20a9d5",
-        800: "#35798e",
-        900: "#285766",
-      },
-      violet: {
-        800: "#502b85",
-      },
-      blue: {
-        800: "#0033a0",
-      },
-      teal: {
-        100: "#d0f4f4",
-        200: "#a1e9eb",
-        300: "#70dde0",
-        400: "#3ed2d6",
-        500: "#00c7cb",
-        600: "#009fa3",
-        700: "#00777a",
-        800: "#035051",
-        900: "#032828",
-      },
-      purple: {
-        100: "#e4e2f7",
-        200: "#c9c5ed",
-        300: "#aea8e5",
-        400: "#938bdb",
-        500: "#786dd3",
-        600: "#6058a8",
-        700: "#48417f",
-        800: "#302c54",
-        900: "#18152b",
-      },
-      pink: {
-        100: "#edcef3",
-        200: "#da9ce7",
-        300: "#c76ada",
-        400: "#b534ce",
-        500: "#a200c1",
-        600: "#81009a",
-        700: "#610074",
-        800: "#41004d",
-        900: "#200227",
-      },
-      hotorange: {
-        100: "#f8ddd1",
-        200: "#f0baa3",
-        300: "#ea9875",
-        400: "#e27545",
-        500: "#da5309",
-        600: "#af420a",
-        700: "#833209",
-        800: "#572108",
-        900: "#2b1105",
-      },
-    },
-    borderRadius: {
-      base: "3px",
-      circle: "50%",
-    },
-    fontFamily: {
-      sans: [
-        "Roboto",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "Segoe UI",
-        "Oxygen-Sans",
-        "Ubuntu",
-        "Cantarell",
-        "Helvetica Neue",
-        "sans-serif",
-      ],
-      mono: [
-        "Roboto Mono",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "Segoe UI",
-        "Oxygen-Sans",
-        "Ubuntu",
-        "Cantarell",
-        "Helvetica Neue",
-        "sans-serif",
-      ],
-    },
-    fontSize: {
-      xs: ["0.75rem", { lineHeight: "1rem" }],
-      sm: ["0.875rem", { lineHeight: "1.25rem" }],
-      base: ["1rem", { lineHeight: "1.5rem" }],
-      lg: ["1.125rem", { lineHeight: "1.75rem" }],
-      xl: ["1.25rem", { lineHeight: "1.75rem" }],
-      "2xl": ["1.5rem", { lineHeight: "2rem" }],
-      "3xl": ["1.75rem", { lineHeight: "2.25rem" }],
-      "4xl": ["2.125rem", { lineHeight: "2.5rem" }],
-      "5xl": ["3rem", { lineHeight: "1" }],
-      "6xl": ["3.75rem", { lineHeight: "1" }],
-    },
-    opacity: {
-      0: "0",
-      12: "0.12",
-      14: "0.14",
-      20: "0.2",
-      25: "0.25",
-      40: "0.4",
-      100: "1",
-    },
+      spacing: {
+          0: "var(--spacing-0)",
+          0.25: "(var--spacing-025)",
+          0.5: "(var--spacing-050)",
+          1: "var(--spacing-1)",
+          2: "var(--spacing-2)",
+          3: "var(--spacing-3)",
+          4: "var(--spacing-4)",
+          6: "var(--spacing-6)",
+          8: "var(--spacing-8)",
+          10: "var(--spacing-10)",
+          12: "var(--spacing-12)",
+          14: "var(--spacing-14)",
+          16: "var(--spacing-16)",
+          20: "var(--spacing-20)",
+          24: "var(--spacing-24)"
+      }
   },
   variants: {
-    extend: {},
+      extend: {}
   },
-  plugins: [],
+  plugins: []
 };
