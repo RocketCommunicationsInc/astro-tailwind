@@ -1,6 +1,6 @@
 {
   "name": "@astrouxds/tailwind",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tailwind configuration for AstroUXDS",
   "main": "tailwind.config.js",
   "scripts": {
