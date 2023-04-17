@@ -4,6 +4,10 @@
 
 ## Installation
 
+* Install beta 
+```dotnetcli
+npm i @astrouxds/tailwind@beta
+```
 * If you're not using the Astro Web Components, you'll need to [Install Astro Design Tokens](https://github.com/RocketCommunicationsInc/astro-design-tokens)
 	* `npm i @astrouxds/tokens`
 	* In your project root: `import '@astrouxds/tokens/dist/css/index.css'`
@@ -20,7 +24,7 @@
 
 ## Usage
 
-Reference [tailwind.config.js](./tailwind.config.js) for a list of available colors and utilities.
+Reference [Demo Site](https://astro-tailwind-config.netlify.app/) for a list of available colors and utilities.
 
 For more detailed information, see our [Design Token Documentation](https://astrouxds.org/design-tokens/system)
 
