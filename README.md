@@ -1,16 +1,22 @@
 # Astro Tailwind Config
 
+> NOTE: This package is experimental and is subject to change. 
 
-## Installation 
+## Installation
 
-* [Install Astro Design Tokens](https://github.com/RocketCommunicationsInc/astro-design-tokens)
+* If you're not using the Astro Web Components, you'll need to [Install Astro Design Tokens](https://github.com/RocketCommunicationsInc/astro-design-tokens)
 	* `npm i @astrouxds/tokens`
 	* In your project root: `import '@astrouxds/tokens/dist/css/index.css'`
 * [Install Tailwind](https://tailwindcss.com/docs/installation) in your project.
-* Replace your tailwind.config.js with
+* Add the Astro Tailwind plugin 
 ```js
-module.exports = require('@astrouxds/tailwind')
+//tailwind.config.js
+...
+ plugins: [require('@astrouxds/tailwind')]
+...
+
 ```
+
 
 ## Usage
 
