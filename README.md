@@ -1,12 +1,11 @@
 # Astro Tailwind Config
 
-> NOTE: This package is experimental and is subject to change. 
-
+> NOTE: This package is experimental and is subject to change.
 ## Installation
 
-* Install beta 
-```dotnetcli
-npm i @astrouxds/tailwind@beta
+* Install 
+```bash
+npm i @astrouxds/tailwind
 ```
 * If you're not using the Astro Web Components, you'll need to [Install Astro Design Tokens](https://github.com/RocketCommunicationsInc/astro-design-tokens)
 	* `npm i @astrouxds/tokens`
@@ -21,15 +20,8 @@ npm i @astrouxds/tailwind@beta
 
 ```
 
-
 ## Usage
 
 Reference [Demo Site](https://astro-tailwind-config.netlify.app/) for a list of available colors and utilities.
 
 For more detailed information, see our [Design Token Documentation](https://astrouxds.org/design-tokens/system)
-
-## Demo
-
-[Tailwind Play](https://play.tailwindcss.com/H3SyHmQxA5)
-You can get started immediately using this Tailwind Play configuration.
-
