@@ -25,7 +25,7 @@ module.exports = {
                   default: "var(--color-background-surface-default)",
                   header: "var(--color-background-surface-header)",
                   hover: "var(--color-background-surface-hover)",
-                  selected: "var(--color-background-background-selected)"
+                  selected: "var(--color-background-surface-selected)"
               },
               interactive: {
                 "default": "var(--color-background-interactive-default)",

@@ -14,31 +14,31 @@ module.exports = plugin(function ({ addUtilities, theme, matchUtilities, addComp
         white: 'var(--color-text-white)',
         black: 'var(--color-text-black)',
         interactive: {
-          DEFAULT: 'var(--color-text-interactive-default)',
+          default: 'var(--color-text-interactive-default)',
           hover: 'var(--color-text-interactive-hover)'
         }
       },
       backgroundColor: {
         base: {
-          DEFAULT: 'var(--color-background-base-default)',
+          default: 'var(--color-background-base-default)',
           header: 'var(--color-background-base-header)',
           hover: 'var(--color-background-base-hover)',
           selected: 'var(--color-background-base-selected)'
         },
         surface: {
-          DEFAULT: 'var(--color-background-surface-default)',
+          default: 'var(--color-background-surface-default)',
           header: 'var(--color-background-surface-header)',
           hover: 'var(--color-background-surface-hover)',
-          selected: 'var(--color-background-background-selected)'
+          selected: 'var(--color-background-surface-selected)'
         },
         interactive: {
-          DEFAULT: 'var(--color-background-interactive-default)',
+          default: 'var(--color-background-interactive-default)',
           hover: 'var(--color-background-interactive-hover)'
         }
       },
       borderColor: {
         interactive: {
-          DEFAULT: 'var(--color-border-interactive-default)',
+          default: 'var(--color-border-interactive-default)',
           hover: 'var(--color-border-interactive-hover)',
           muted: 'var(--color-border-interactive-muted)'
         }
