@@ -241,11 +241,11 @@ module.exports = plugin(function ({ addUtilities, theme, matchUtilities, addComp
       ],
       '5xl': [
         'var(--font-size-5xl)',
-        { lineHeight: 'var(--line-height-xs)' }
+        { lineHeight: 1 }
       ],
       '6xl': [
         'var(--font-size-6xl)',
-        { lineHeight: 'var(--line-height-xs)' }
+        { lineHeight: 1 }
       ]
     },
     lineHeight: {
