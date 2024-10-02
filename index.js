@@ -5,6 +5,11 @@ module.exports = plugin(function ({ addUtilities, theme, matchUtilities, addComp
 }, {
   theme: {
     extend: {
+      // Like many other places in Tailwind, the special DEFAULT key can be used when you want to define a value with no suffix
+      // https://tailwindcss.com/docs/customizing-colors
+      // 
+      // Below, default and DEFAULT exist in some cases to maintain backward compatibility.   
+      // In a major version bump `default` can be dropped, though it will be a breaking change if anyone is depending on `-default`
       textColor: {
         primary: 'var(--color-text-primary)',
         secondary: 'var(--color-text-secondary)',
@@ -15,30 +20,35 @@ module.exports = plugin(function ({ addUtilities, theme, matchUtilities, addComp
         black: 'var(--color-text-black)',
         interactive: {
           default: 'var(--color-text-interactive-default)',
+          DEFAULT: 'var(--color-text-interactive-default)',
           hover: 'var(--color-text-interactive-hover)'
         }
       },
       backgroundColor: {
         base: {
           default: 'var(--color-background-base-default)',
+          DEFAULT: 'var(--color-background-base-default)',
           header: 'var(--color-background-base-header)',
           hover: 'var(--color-background-base-hover)',
           selected: 'var(--color-background-base-selected)'
         },
         surface: {
           default: 'var(--color-background-surface-default)',
+          DEFAULT: 'var(--color-background-surface-default)',
           header: 'var(--color-background-surface-header)',
           hover: 'var(--color-background-surface-hover)',
           selected: 'var(--color-background-surface-selected)'
         },
         interactive: {
           default: 'var(--color-background-interactive-default)',
+          DEFAULT: 'var(--color-background-interactive-default)',
           hover: 'var(--color-background-interactive-hover)'
         }
       },
       borderColor: {
         interactive: {
           default: 'var(--color-border-interactive-default)',
+          DEFAULT: 'var(--color-border-interactive-default)',
           hover: 'var(--color-border-interactive-hover)',
           muted: 'var(--color-border-interactive-muted)'
         }
